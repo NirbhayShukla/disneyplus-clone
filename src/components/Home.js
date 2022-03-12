@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import ImageSlider from "./ImageSlider";
 import Viewers from "./Viewers";
 import Movies from "./Movies";
+// import db from "../firebase";
+// // import { collection, query } from "firebase/firestore/lite";
+// import { consoleOrigin } from "firebase-tools/lib/api";
+
+// import database from "./firebase";
+// import { onSnapshot, collection, query } from "firebase/firestore";
 
 function Home() {
+  //   useEffect(() => {
+  //     const q = query(collection(db, "movies"));
+  //     const snap = onSnapshot(q, (snapshot) => {
+  //       console.log(snapshot);
+  //     });
+
+  //     // db.collection("movies").onSnapshot((snapshot) => {
+  //     //   console.log(snapshot);
+  //     // });
+  //   }, []);
+
   return (
     <Container>
       <ImageSlider />
